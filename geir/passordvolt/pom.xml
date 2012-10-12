@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>no.mesan</groupId>
+  <artifactId>passordvolt</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>passordvolt</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+<dependency>
+	<groupId>com.oracle</groupId>
+	<artifactId>javafx</artifactId>
+	<version>2.2</version>
+	<scope>compile</scope>
+</dependency>
+  </dependencies>
+
+ <build>
+  <plugins>
+	<plugin>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>2.3.2</version>
+		<configuration>
+			<source>1.7</source>
+			<target>1.7</target>
+		</configuration>
+	</plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>mesan.JavaFXHelloWorldMaven</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+   </plugins>
+  </build>
+<!-- Alternativ til å legge inn javafx som dependency er å sette javafx som systemparameter: 
+ <settings>
+   <profiles>
+ 	<profile>
+	         <id>javafx</id>
+         <activation>
+               <activeByDefault>false</activeByDefault>
+         </activation>
+            <properties>
+	        <fx.home>[PATH_TO_JAVAFX]/javafx-sdk2.0.2-beta/</fx.home>
+	    </properties>
+   </profiles>
+</settings>
+<dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>javafx</artifactId>
+            <version>2.0</version>
+            <systemPath>${fx.home}/rt/lib/jfxrt.jar</systemPath>
+            <scope>system</scope>
+        </dependency>
+-->
+</project>

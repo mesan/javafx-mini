@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="IOKnapper" prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="no.mesan.felles.IOKnapperController">
+  <children>
+    <Button mnemonicParsing="false" text="Lagre" />
+    <Button mnemonicParsing="false" text="Åpne" />
+  </children>
+  <stylesheets>
+    <URL value="@ioknapper.css" />
+  </stylesheets>
+</HBox>
