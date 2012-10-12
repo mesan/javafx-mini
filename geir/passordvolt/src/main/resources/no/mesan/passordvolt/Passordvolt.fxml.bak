@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
@@ -9,29 +10,27 @@
 
 <GridPane prefHeight="284.0" prefWidth="363.0" xmlns:fx="http://javafx.com/fxml">
   <children>
-    <HBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" GridPane.columnIndex="0" 
-          GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" 
-          GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+    <HBox spacing="5.0" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
       <children>
-        <fx:include source="IOKnapper.fxml" />
+        <fx:include source="../felles/IOKnapper.fxml" />
       </children>
     </HBox>
-    <fx:include source="Tabell.fxml" GridPane.columnIndex="0" GridPane.rowIndex="1" 
-GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS"/>
-    <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" GridPane.columnIndex="1" 
-          GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="1" 
-          GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+    <fx:include source="Tabell.fxml" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS" />
+    <VBox spacing="5.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
       <children>
-        <fx:include source="TabellKnapper.fxml" />
+        <fx:include source="../felles/TabellKnapper.fxml" />
       </children>
     </VBox>
   </children>
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="NEVER" minWidth="-1.0" prefWidth="-1.0" />
+    <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="NEVER" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints fillHeight="false" maxHeight="-1.0" minHeight="-1.0" prefHeight="-1.0" valignment="TOP" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="-1.0" minHeight="-1.0" prefHeight="-1.0" valignment="TOP" vgrow="ALWAYS" />
+    <RowConstraints fillHeight="false" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints valignment="TOP" vgrow="ALWAYS" />
   </rowConstraints>
+  <stylesheets>
+    <URL value="@../../../css/passordvolt.css" />
+  </stylesheets>
 </GridPane>

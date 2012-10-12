@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane prefHeight="284.0" prefWidth="363.0" xmlns:fx="http://javafx.com/fxml">
+<GridPane id="Passordvolt" prefHeight="284.0" prefWidth="363.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml">
   <children>
     <HBox spacing="5.0" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
       <children>
@@ -29,4 +30,7 @@
     <RowConstraints fillHeight="false" valignment="TOP" vgrow="SOMETIMES" />
     <RowConstraints valignment="TOP" vgrow="ALWAYS" />
   </rowConstraints>
+  <stylesheets>
+    <URL value="@../../../css/passordvolt.css" />
+  </stylesheets>
 </GridPane>

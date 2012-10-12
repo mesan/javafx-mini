@@ -19,6 +19,6 @@
     </TableView>
   </children>
   <stylesheets>
-    <URL value="@tabell.css" />
+    <URL value="@../../../css/tabell.css" />
   </stylesheets>
 </AnchorPane>
