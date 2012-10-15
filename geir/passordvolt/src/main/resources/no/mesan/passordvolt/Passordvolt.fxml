@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane id="Passordvolt" prefHeight="284.0" prefWidth="363.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml">
+<GridPane id="Passordvolt" prefHeight="284.0" prefWidth="363.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="no.mesan.passordvolt.PassordvoltController">
   <children>
     <HBox spacing="5.0" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
       <children>
